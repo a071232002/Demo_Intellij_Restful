@@ -11,11 +11,11 @@ import java.util.stream.Collectors;
 @Service
 public class MemberService {
 
+    private final MemberRepository memberRepository;
+
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
-
-    private final MemberRepository memberRepository;
 
     //create
     public MemberDTO create(MemberDTO memberDTO) {
